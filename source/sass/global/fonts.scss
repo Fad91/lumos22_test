@@ -1,0 +1,71 @@
+// Файл шрифтов
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Gilroy"),
+    url("../fonts/Gilroy-Bold.woff2") format("woff2"),
+    url("../fonts/Gilroy-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Gilroy"),
+    url("../fonts/Gilroy-Regular.woff2") format("woff2"),
+    url("../fonts/Gilroy-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Mulish"),
+    url("../fonts/mulish-v5-cyrillic-300.woff2") format("woff2"),
+    url("../fonts/mulish-v5-cyrillic-300.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Mulish"),
+    url("../fonts/mulish-v5-cyrillic-700.woff2") format("woff2"),
+    url("../fonts/mulish-v5-cyrillic-700.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Mulish"),
+    url("../fonts/inter-v3-cyrillic-700.woff2") format("woff2"),
+    url("../fonts/inter-v3-cyrillic-700.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Lato"),
+    url("../fonts/lato-v20-latin-ext-700.woff2") format("woff2"),
+    url("../fonts/lato-v20-latin-ext-700.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Lato"),
+    url("../fonts/lato-v20-latin-ext-900.woff2") format("woff2"),
+    url("../fonts/lato-v20-latin-ext-900.woff") format("woff");
+}

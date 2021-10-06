@@ -1,0 +1,130 @@
+.stages-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 0 0 10px 0;
+  z-index: 1;
+  position: relative;
+  padding: 12px 0;
+
+  @include vp--1023 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+.stages-list__item {
+  position: relative;
+
+  &:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    width: 62px;
+    height: 155px;
+    background: url("../img/icon-triangle.svg") no-repeat;
+    top: -19px;
+    right: -50px;
+    z-index: 2;
+
+    @include vp--1023 {
+      content: none;
+    }
+  }
+}
+
+.stages-list__item span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-family-inter;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: #fad264;
+  padding: 39px 0 47px 0;
+  background-color: #312d48;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../img/icon-round-stage.svg") no-repeat;
+    width: 69px;
+    height: 67px;
+    top: 20px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-top: 58px solid transparent;
+    border-left: 40px solid #312d48;
+    border-bottom: 58px solid transparent;
+    top: 0;
+    right: 183px;
+
+    @include vp--1023 {
+      content: none;
+    }
+  }
+}
+
+.stages-list__item--meteorite span {
+  background-color: #4e3d71;
+}
+
+.stages-list__item--lilacbush span {
+  background-color: #8e67c0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-top: 58px solid transparent;
+    border-left: 40px solid #4e3d71;
+    border-bottom: 58px solid transparent;
+    top: 0;
+    right: 183px;
+
+    @include vp--1023 {
+      content: none;
+    }
+  }
+}
+
+.stages-list__item--fuchsia span {
+  background-color: #b967c0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-top: 58px solid transparent;
+    border-left: 40px solid #8e67c0;
+    border-bottom: 58px solid transparent;
+    top: 0;
+    right: 183px;
+
+    @include vp--1023 {
+      content: none;
+    }
+  }
+}
+
+.stages-list__item--lightcoral span {
+  background-color: #ed867a;
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-top: 58px solid transparent;
+    border-left: 40px solid #b967c0;
+    border-bottom: 58px solid transparent;
+    top: 0;
+    right: 183px;
+
+    @include vp--1023 {
+      content: none;
+    }
+  }
+}

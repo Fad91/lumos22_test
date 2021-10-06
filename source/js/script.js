@@ -1,15 +1,20 @@
-'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
+// Файл скриптов
+// Variables - переменные
 
-pageHeader.classList.remove('page-header--nojs');
+let scrollButton = document.querySelector(".intro-section__button");
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
-  } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
-  }
-});
+
+// Smooth scroll - плавный скролл к любому блоку
+
+if (scrollButton) {
+  scrollButton.addEventListener("click", () => {
+    var addSmoothScroll = function () {
+      var moveTo = new MoveTo({
+        duration: 1200,
+      });
+      const target = document.querySelector(".reasons-section");
+      moveTo.move(target);
+    };
+    addSmoothScroll();
+  });
+}

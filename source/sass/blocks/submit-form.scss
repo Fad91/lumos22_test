@@ -1,0 +1,68 @@
+.submit-form {
+  width: 350px;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  padding: 32px 0 31px 0;
+
+  @include vp--767 {
+    width: 320px;
+  }
+}
+
+.submit-form__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 0 45px 0;
+}
+
+.submit-form input[type="text"],
+.submit-form input[type="email"],
+.submit-form button {
+  display: block;
+  background-color: #ffffff;
+  border-radius: 30px;
+  width: 294px;
+  margin: 0 auto;
+  padding: 19px 5px;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.submit-form input[type="text"] {
+  margin-bottom: 20px;
+}
+
+.submit-form input[type="email"] {
+  margin-bottom: 30px;
+}
+
+.submit-form__label {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.submit-form button {
+  border: none;
+  background-color: #f7c847;
+  box-shadow: 0 10px 40px rgba(255, 223, 135, 0.5);
+  margin-bottom: 26px;
+}
+
+.submit-form input[type="checkbox"] {
+  appearance: none;
+}
+
+.submit-form input[type="checkbox"]:checked + .submit-form__label {
+  color: #fad264;
+}

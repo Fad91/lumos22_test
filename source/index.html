@@ -1,13 +1,536 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Люмос 22</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="preload" href="fonts/Gilroy-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Gilroy-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <div class="visually-hidden">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+  <div class="intro">
+    <header class="header">
+      <div class="header__logo">
+        <a class="header__link">
+          <picture>
+            <source type="image/webp"
+              srcset="img/desktop-logo-background.webp 1x, img/desktop-logo-background@2x.webp 2x">
+            <img src="img/desktop-logo-background.png" srcset="img/desktop-logo-background@2x.png 2x" width="68"
+              height="68" alt="Логотип Lumos 22">
+          </picture>
+        </a>
+      </div>
+      <p class="header__text">
+        Практический марафон, основанный на синтезе нумерологии, практической психологии и работы с бессознательным от
+        эксперта в области трансперсональной психологии и известного нумеролога — Мары Борониной
+      </p>
+    </header>
+    <section class="intro-section">
+      <h1 class="visually-hidden">Марафон от
+        эксперта в области трансперсональной психологии и известного нумеролога — Мары Борониной</h1>
+      <h2 class="intro-section__title">Пробудите свои <span class="text-yellow">сверхспособности</span></h2>
+      <p class="intro-section__content">Как <b>ВСЕГО ЗА 3 ВЕЧЕРА</b> выявить и раскрыть свой <b>ВРОЖДЁННЫЙ
+          ПОТЕНЦИАЛ</b>, чтобы:</p>
+      <ul class="features-list">
+        <li class="features-list__item features-item">
+          <p>научиться считывать информацию о прошлом, настоящем и будущем</p>
+        </li>
+        <li class="features-list__item features-item">
+          <p>уметь мгновенно повышать уровень энергии и самостоятельно восстанавливать здоровье</p>
+        </li>
+        <li class="features-list__item features-item">
+          <p>начать притягивать в свою
+            жизнь нужные события, людей
+            и большие деньги</p>
+        </li>
+      </ul>
+      <h3 class="intro-section__date">
+        <span>21-23 сентября в 15:00 МСК</span>
+        <span>|</span>
+        <span>Формат: онлайн по всему миру</span>
+      </h3>
+      <div class="intro-form">
+        <form action="#" method="POST">
+          <label for="email" class="visually-hidden">Введите ваш E-mail</label>
+          <input type="email" name="email" id="email" placeholder="Введите ваш e-mail" required>
+          <button type="submit" aria-label="Записаться">Записаться</button>
+          <button type="submit" aria-label="Учавствовать бесплатно">Участвовать бесплатно!</button>
+          <input type="checkbox" name="agreement" id="agreement">
+          <label for="agreement" class="intro-form__label">Согласен получать письма от "Люмос 22"</label>
+        </form>
+      </div>
+      <p class="intro-section__note">Сразу после подписки вы получите тест-диагностику на определение ваших
+        сверхспособностей!</p>
+      <button type="button" aria-label="Прокрутить вниз" class="intro-section__button">
+        <svg width="50" height="50" viewBox="0 0 50 50">
+          <use href="#icon-mouse-down" fill="none"></use>
+        </svg>
+      </button>
+    </section>
+  </div>
+  <main>
+    <section class="marathon-section">
+      <h2 class="marathon-section__title">Программа марафона</h2>
+      <ul class="marathon-section__list marathon-list">
+        <li class="marathon-item">
+          <div class="marathon-item__title-wrapper">
+            <p class="marathon-item__date">День 1-й<br>21 сентября в 15:00 мск</p>
+            <h3 class="marathon-item__title">Диагностика ваших врождённых способностей</h3>
+          </div>
+          <picture>
+            <source type="image/webp"
+              srcset="img/desktop-main-first-good.webp 1x, img/desktop-main-first-good@2x.webp 2x">
+            <img src="img/desktop-main-first-good.png" srcset="img/desktop-main-first-good@2x.png 2x" width="293"
+              height="384" alt="Промо курса">
+          </picture>
+          <div class="marathon-item__list-wrapper">
+            <ul class="details-list">
+              <li class="details-list__item">Узнаете, что такое <b>ясновидение, яснознание, яснослышание,
+                  ясночувствование</b>
+                и поймёте, в чем разница?
+              </li>
+              <li class="details-list__item">Определите, есть ли у вас <b>врожденный дар?</b></li>
+              <li class="details-list__item">Пройдете практику на выявление <b>Личного Канала Сверхспособностей</b></li>
+              <li class="details-list__item">Пройдете практику на <b>раскрытие Аджна-чакры</b> (усиления восприятия
+                информации)
+              </li>
+              <li class="details-list__item">Совершите практику <b>альфа-погружение</b> на выявление вредительских
+                воздействий
+                со стороны</li>
+              <li class="details-list__item">Узнаете, где находится <b>Центр Управления Судьбой</b></li>
+            </ul>
+            <p class="marathon-item__content">Результат:</p>
+            <ul class="results-list">
+              <li class="results-list__item">Знаете, что сверхспособности — это не удел избранных, вы тоже обладаете ими
+                с рождения, главное —
+                выявить и раскрыть свой потенциал
+              </li>
+              <li class="results-list__item">Определили, какие каналы восприятия существуют и как их использовать для
+                усиления своих возможностей
+                для
+                себя и близких, на работе и в быту
+              </li>
+              <li class="results-list__item">
+                Выявили сторонние негативные воздействия, которые не дают развиваться вашим способностям
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="marathon-item">
+          <div class="marathon-item__title-wrapper">
+            <p class="marathon-item__date">День 2-й<br>22 сентября в 15:00 мск</p>
+            <h3 class="marathon-item__title">Учимся чувствовать энергию при помощи рук</h3>
+          </div>
+          <picture>
+            <source type="image/webp"
+              srcset="img/desktop-main-second-good.webp 1x, img/desktop-main-second-good@2x.webp 2x">
+            <img src="img/desktop-main-second-good.png" srcset="img/desktop-main-second-good@2x.png 2x" width="293"
+              height="384" alt="Промо курса">
+          </picture>
+          <div class="marathon-item__list-wrapper">
+            <ul class="details-list">
+              <li class="details-list__item">Пройдете диагностику на выявление блоков энергии</li>
+              <li class="details-list__item">Сделаете нумерологический <b>расчет сверхспособностей по дате рождения</b>
+              </li>
+              <li class="details-list__item">Пройдете практику на <b>раскрытие чувствования энергии в руках</b></li>
+              <li class="details-list__item">Получите практику раскрытия энергии на каждый день</li>
+            </ul>
+            <p class="marathon-item__content">Результат:</p>
+            <ul class="results-list">
+              <li class="results-list__item">Знаете, какие именно способности были даны вам при рождении</li>
+              <li class="results-list__item">Научились чувствовать энергию с помощью рук и понимаете, как можно
+                использовать её для определения
+                проблем со здоровьем и устранения боли</li>
+              <li class="results-list__item">
+                Освоили методику экстренной энергетической помощи и знете, как мгновенно восстановить работоспособность
+                при упадке сил
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="marathon-item">
+          <div class="marathon-item__title-wrapper">
+            <p class="marathon-item__date">День 3-й<br>23 сентября в 15:00 мск</p>
+            <h3 class="marathon-item__title">Открываем в себе Сверхсилу и учимся ею управлять!</h3>
+          </div>
+          <picture>
+            <source type="image/webp"
+              srcset="img/desktop-main-third-good.webp 1x, img/desktop-main-third-good@2x.webp 2x">
+            <img src="img/desktop-main-third-good.png" srcset="img/desktop-main-third-good@2x.png 2x" width="293"
+              height="384" alt="Промо курса">
+          </picture>
+          <div class="marathon-item__list-wrapper">
+            <ul class="details-list">
+              <li class="details-list__item">Узнаете <b>6 законов Сверхсилы</b></li>
+              <li class="details-list__item">Выясните, <b>что делать, если вы обнаружили в себе сверхспособности:</b>
+                как ими
+                управлять и что будет, если
+                их
+                не применять на практике</li>
+              <li class="details-list__item">Узнаете, <b>как использовать вещие сны для реализации способностей</b></li>
+              <li class="details-list__item">Получите <b>практику восполнения ресурса и энергии за 6 минут</b></li>
+              <li class="details-list__item">Пройдете <b>практику-доступ к Центру Сверхсилы в вашем теле</b></li>
+              <li class="details-list__item">Узнаете, <b>как формулировать намерения и желания</b> так, чтобы они
+                исполнялись с
+                вероятностью 100%</li>
+            </ul>
+            <p class="marathon-item__content">Результат:</p>
+            <ul class="results-list">
+              <li class="results-list__item">Поняли, как экологично управлять своими способностями и использовать их для
+                помощи себе и близким
+              </li>
+              <li class="results-list__item">Знаете, как взаимодействовать с вещими снами и формировать намерение так,
+                чтобы достигать свих желаний
+                и
+                целей со 100% точностью
+              </li>
+              <li class="results-list__item">
+                Восстановили свой энергетический баланс на практикуме, после чего вы ещё неделю ощущаете выраженный
+                эффект: прилив сил и работоспособности, позитивное настроение, заряд мотивации, отличное самочувствие,
+                повышение дохода и пребывание на волне удачных обстоятельств
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="reasons-section">
+      <div class="reasons-section__wrapper">
+        <h2 class="reasons-section__title">Вам обязательно нужно участвовать в марафоне, если:</h2>
+        <ul class="reasons-section__list reasons-list">
+          <li class="reasons-list__item reasons-item">
+            <div class="reasons-item__top-wrapper">
+              <picture>
+                <source type="image/webp"
+                  srcset="img/desktop-first-reason.webp 1x, img/desktop-first-reason@2x.webp 2x">
+                <img src="img/desktop-first-reason.png" srcset="img/desktop-first-reason@2x.png 2x" width="349"
+                  height="238" alt="Иллюстрация курса">
+              </picture>
+              <p class="reasons-item__content reasons-item__content--bold">Вам хотелось бы обладать
+                сверхвозможностями:
+                "чувствовать" людей вокруг, убирать боль руками,
+                притягивать
+                удачные обстоятельства
+              </p>
+              <p class="reasons-item__content reasons-item__content--regular">но вы считаете, что таким потенциалом
+                обладают только избранные и это возможно только в фантастических
+                фильмах
+              </p>
+            </div>
+            <div class="reasons-item__bottom-wrapper">
+              <p class="reasons-item__content">Уже на практикуме вы не только выявите свои скрытые способности, но и
+                ощутите их физически:</p>
+              <ul class="methods-list">
+                <li class="methods-list__item">узнаете, какая энергия на ощупь</li>
+                <li class="methods-list__item">освоите навык мгновенного восстановления энергии при упадке сил</li>
+                <li class="methods-list__item">научитесь формировать желания так, чтобы они осуществлялись со 100%
+                  вероятностью</li>
+              </ul>
+            </div>
+          </li>
+          <li class="reasons-list__item reasons-item">
+            <div class="reasons-item__top-wrapper">
+              <picture>
+                <source type="image/webp"
+                  srcset="img/desktop-second-reason.webp 1x, img/desktop-second-reason@2x.webp 2x">
+                <img src="img/desktop-second-reason.png" srcset="img/desktop-second-reason@2x.png 2x" width="349"
+                  height="238" alt="Иллюстрация курса">
+              </picture>
+              <p class="reasons-item__content reasons-item__content--bold">В вашем роду были целители или ясновидящие,
+                или вы давно замечаете, что воспринимаете мир иначе:</p>
+              <p class="reasons-item__content reasons-item__content--regular">ощущаете в себе особые способности,
+                видите больше, чем другие, но не знаете, что с этим делать</p>
+            </div>
+            <div class="reasons-item__bottom-wrapper">
+              <p class="reasons-item__content">Вы определите свои врождённые способности, и научитесь экологично ими
+                управлять:</p>
+              <ul class="methods-list">
+                <li class="methods-list__item">овладеете 3-мя системами восприятия: визуальной, аудиальной и
+                  кинестетической</li>
+                <li class="methods-list__item">научитесь считывать информацию о прошлом, настоящем и будущем</li>
+                <li class="methods-list__item">освоите работату с чакровой системой</li>
+                <li class="methods-list__item">узнаете, как применять свои сверхспособности для помощи себе и своим
+                  близким в 4-х важнейших сферах
+                  жизни: здоровье, отношениях, работе, финансах</li>
+              </ul>
+            </div>
+          </li>
+          <li class="reasons-list__item reasons-item">
+            <div class="reasons-item__top-wrapper">
+              <picture>
+                <source type="image/webp"
+                  srcset="img/desktop-third-reason.webp 1x, img/desktop-third-reason@2x.webp 2x">
+                <img src="img/desktop-third-reason.png" srcset="img/desktop-third-reason@2x.png 2x" width="349"
+                  height="238" alt="Иллюстрация курса">
+              </picture>
+              <p class="reasons-item__content reasons-item__content--bold">Вы занимаетесь коучингом или
+                консультированием в сфере психологии, нумерологии, медицины,</p>
+              <p class="reasons-item__content reasons-item__content--regular">и хотите расширить набор практических
+                инструментов
+                для помощи своим клиентам</p>
+            </div>
+            <div class="reasons-item__bottom-wrapper">
+              <p class="reasons-item__content">Вы получите соврменные авторские методики и техники, которые: </p>
+              <ul class="methods-list">
+                <li class="methods-list__item">откроют новые возможности для работы с клиентами</li>
+                <li class="methods-list__item">усилят ваши личные способности</li>
+                <li class="methods-list__item">помогут вам восстанавливаться после сложных сессий в разы быстрее</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="program-section">
+      <div class="program-section__wrapper">
+        <h2 class="program-section__title">Всего за 3 дня</h2>
+        <p class="program-section__content">вы обретете уверенность в своей СИЛЕ и СВЕРХспособностях и поверите, что
+          способны на большее:</p>
+        <ul class="stages-list">
+          <li class="stages-list__item"><span>1</span></li>
+          <li class="stages-list__item stages-list__item--meteorite"><span>2</span></li>
+          <li class="stages-list__item stages-list__item--lilacbush"><span>3</span></li>
+          <li class="stages-list__item stages-list__item--fuchsia"><span>4</span></li>
+          <li class="stages-list__item stages-list__item--lightcoral"><span>5</span></li>
+        </ul>
+        <ul class="learning-list">
+          <li class="learning-list__item">
+            <p class="learning-list__content">Научитесь <b>считывать информацию</b>
+              из настоящего, прошлого и будущего
+            </p>
+          </li>
+          <li class="learning-list__item">
+            <p class="learning-list__content">Узнаете, какой у вас основной <b>канал экстрасенсорного</b>
+              восприятия и считывания информации
+            </p>
+          </li>
+          <li class="learning-list__item">
+            <p class="learning-list__content">Сможете <b>наполняться Энергией Жизни за 3 минуты</b> через особую
+              альфа-практику
+            </p>
+          </li>
+          <li class="learning-list__item">
+            <p class="learning-list__content">Поймёте, как <b>убрать денежные блоки и вредоносные воздействия со
+                стороны</b>
+              (которые есть у 90% людей в мире)
+            </p>
+          </li>
+          <li class="learning-list__item">
+            <p class="learning-list__content">
+              Рассчитаете, <b>есть ли у вас сверх-способности</b> по дате вашего рождения
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="results-section">
+      <h2 class="results-section__title">Как изменится ваша жизнь, если вы начнёте применять полученные знания:</h2>
+      <div class="results-section__wrapper">
+        <div class="results-block">
+          <p class="results-block-intro results-block-intro--before">До практикума</p>
+          <ul class="results-block__list workshop-list">
+            <li class="workshop-list__item workshop-item">
+              <picture>
+                <source type="image/webp"
+                  srcset="img/desktop-image-first-result-before.webp 1x, img/desktop-image-first-result-before@2x.webp 2x">
+                <img src="img/desktop-image-first-result-before.jpg"
+                  srcset="img/desktop-image-first-result-before@2x.jpg 2x" width="540" height="315"
+                  alt="Картина девушки с завязанными глазами">
+              </picture>
+              <p class="workshop-item__content"><b>У вас не развита интуиция</b> и поэтому вы: не разбираетесь в людях,
+                постоянно выбираете "не тех" мужчин, не
+                можете уловить нужный момент или предчувствовать грядущие неприятности</p>
+            </li>
+            <li class="workshop-list__item workshop-item">
+              <picture>
+                <source type="image/webp"
+                  srcset="img/desktop-image-second-result-before.webp 1x, img/desktop-image-second-result-before@2x.webp 2x">
+                <img src="img/desktop-image-second-result-before.jpg"
+                  srcset="img/desktop-image-second-result-before@2x.jpg 2x" width="540" height="315"
+                  alt="Картина, иллюстрирующая упадок сил">
+              </picture>
+              <p class="workshop-item__content"><b>Вы страдаете от постоянного упадка сил,</b> вам сложно
+                концентрироваться, работа даётся с трудом, у вас
+                постоянно что-то болит, а простая пробежка кажется крайне изнурительной задачей</p>
+            </li>
+            <li class="workshop-list__item workshop-item">
+              <picture>
+                <source type="image/webp"
+                  srcset="img/desktop-image-third-result-before.webp 1x, img/desktop-image-third-result-before@2x.webp 2x">
+                <img src="img/desktop-image-third-result-before.jpg"
+                  srcset="img/desktop-image-third-result-before@2x.jpg 2x" width="540" height="315"
+                  alt="Картина, иллюстрирующая упадок сил">
+              </picture>
+              <p class="workshop-item__content"><b>Вы не знаете, как решить ворох накопившихся проблем</b> и считаете,
+                что для этого нужны либо большие связи, либо большие деньги</p>
+            </li>
+            <li class="workshop-list__item workshop-item">
+              <picture>
+                <source type="image/webp"
+                  srcset="img/desktop-image-fourth-result-before.webp 1x, img/desktop-image-fourth-result-before@2x.webp 2x">
+                <img src="img/desktop-image-fourth-result-before.jpg"
+                  srcset="img/desktop-image-fourth-result-before@2x.jpg 2x" width="540" height="315"
+                  alt="Картина, иллюстрирующая упадок сил">
+              </picture>
+              <p class="workshop-item__content">Вы считаете себя невезучим человеком: хорошие должности, выигрыши,
+                выгодные знакомства, удачные
+                возможности проходят мимо вас и всегда достаются кому-то другому</p>
+            </li>
+          </ul>
+        </div>
+        <div class="results-block">
+          <p class="results-block-intro results-block-intro--after">После практикума</p>
+          <ul class="results-block__list workshop-list">
+            <li class="workshop-list__item workshop-item">
+              <picture>
+                <source type="image/webp"
+                  srcset="img/desktop-image-first-result-after.webp 1x, img/desktop-image-first-result-after@2x.webp 2x">
+                <img src="img/desktop-image-first-result-after.jpg"
+                  srcset="img/desktop-image-first-result-after@2x.jpg 2x" width="540" height="315"
+                  alt="Картина девушки, освобождающей глаза">
+              </picture>
+              <p class="workshop-item__content">Вы прокачали свою интуицию и благодаря ей мгновенно "считываете" людей,
+                можете предчувствовать опасность,
+                понимаете сны и всегда оказываетесь в нужное время в нужном месте</p>
+            </li>
+            <li class="workshop-list__item workshop-item">
+              <picture>
+                <source type="image/webp"
+                  srcset="img/desktop-image-second-result-after.webp 1x, img/desktop-image-second-result-after@2x.webp 2x">
+                <img src="img/desktop-image-second-result-after.jpg"
+                  srcset="img/desktop-image-second-result-after@2x.jpg 2x" width="540" height="315"
+                  alt="Картина, иллюстрирующая упадок сил">
+              </picture>
+              <p class="workshop-item__content">Вы излучаете позитив, бодрость и жизенную энергию! Вы чувствуете себя
+                активнее, здоровее и успеваете
+                делать в разы больше. Вам хватает терпения и мотивации доводить дела до конца</p>
+            </li>
+            <li class="workshop-list__item workshop-item">
+              <picture>
+                <source type="image/webp"
+                  srcset="img/desktop-image-third-result-after.webp 1x, img/desktop-image-third-result-after@2x.webp 2x">
+                <img src="img/desktop-image-third-result-after.jpg"
+                  srcset="img/desktop-image-third-result-after@2x.jpg 2x" width="540" height="315"
+                  alt="Картина, иллюстрирующая упадок сил">
+              </picture>
+              <p class="workshop-item__content">Вы обнаружили в себе скрытые способности и ресурсы, о которых даже не
+                подозревали и теперь используете их
+                для успешного решения сложных ситуаций у себя и близких</p>
+            </li>
+            <li class="workshop-list__item workshop-item">
+              <picture>
+                <source type="image/webp"
+                  srcset="img/desktop-image-fourth-result-after.webp 1x, img/desktop-image-fourth-result-after@2x.webp 2x">
+                <img src="img/desktop-image-fourth-result-after.jpg"
+                  srcset="img/desktop-image-fourth-result-after@2x.jpg 2x" width="540" height="315"
+                  alt="Картина, иллюстрирующая упадок сил">
+              </picture>
+              <p class="workshop-item__content">Вы ощущаете себя настоящим любимчиком фортуны: события складываются как
+                нельзя лучше, вы притягиваете в
+                свою жизнь нужные возможности, важных людей и большие деньги</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button type="button" class="results-section__button">Иду на практикум!</button>
+    </section>
+    <section class="author-section">
+      <div class="author-section__wrapper">
+        <h2 class="author-section__title">Автор марафона</h2>
+        <h3 class="author-section__subtitle">Мара Боронина</h3>
+        <p class="author-section__content">Эксперт в области трансперсональной психологии, известный нумеролог в России
+          и СНГ.
+          Уже 17 лет Мара помогает людям раскрывать свои возможности, выходить из самых сложных жизненных ситуаций и
+          воплощать мечты в жизнь
+        </p>
+        <div class="author-block">
+          <picture>
+            <source type="image/webp" srcset="img/desktop-author-image.webp 1x, img/desktop-author-image@2x.webp 2x">
+            <img src="img/desktop-author-image.jpg" srcset="img/desktop-author-image@2x.jpg 2x" width="445" height="345"
+              alt="Фото автора курса">
+          </picture>
+          <ul class="author-block__list author-list">
+            <li class="author-list__item">Опыт консультирования: более 17 лет</li>
+            <li class="author-list__item">Владеет 7-ю традициями Нумерологии</li>
+            <li class="author-list__item">Эксперт в области трансперсональной психологии и НЛП-практик</li>
+            <li class="author-list__item">Разработала 33 обучающих курса</li>
+            <li class="author-list__item">В её Школе прямо сейчас обучаются 4500+ человек</li>
+            <li class="author-list__item">Вебинары ежегодно собирают 60000+ человек</li>
+            <li class="author-list__item">Очередь на личный приём расписана на 3 месяца</li>
+            <li class="author-list__item">Доходы 3 года подряд увеличиваются в 2 раза</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="submit-section">
+      <div class="submit-section__wrapper">
+        <div class="submit-section__text">
+          <h2 class="submit-section__title">Пробудите свои <span class="text-yellow">сверхспособности</span></h2>
+          <p class="submit-section__content">и ощутите первые результаты уже на онлайн-практикуме!</p>
+          <ul class="submit-section__list submit-list">
+            <li class="submit-list__item">Зарегистрируйтесь на онлайн-практикум 21-23 сентября 15:00 мск</li>
+            <li class="submit-list__item">Получите тест-диагностику ваших сверхспособностей</li>
+            <li class="submit-list__item">Пройдите его за 2 минуты и узнайте, есть ли у вас врожденный дар, и как его
+              активировать</li>
+          </ul>
+          <p class="submit-section__promo">Количество мест ограничено!</p>
+        </div>
+        <div class="submit-section__form submit-form">
+          <h3 class="submit-form__title">Оставьте свои данные,
+            чтобы зарегистрироваться на онлайн-практикум</h3>
+          <form action="#" method="POST">
+            <label for="name" class="visually-hidden">Введите ваше имя</label>
+            <input type="text" name="name" id="name" placeholder="Введите ваше имя:">
+            <label for="footer-email" class="visually-hidden">Введите ваше имя</label>
+            <input type="email" name="footer-email" id="footer-email" placeholder="Ваш e-mail:">
+            <button type="submit">Записаться</button>
+            <input type="checkbox" name="submit-agreement" id="submit-agreement">
+            <label class="submit-form__label" for="submit-agreement">Согласен получать письма от "Люмос 22"</label>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__support">
+        <span class="uppercase">Служба поддержки</span>
+        <a href="mailto:info@....com">info@....com</a>
+      </div>
+      <div class="footer__contacts contacts">
+        <div class="contacts__logo">
+          <picture>
+            <source type="image/webp"
+              srcset="img/desktop-footer-logo.webp 1x, img/desktop-footer-logo@2x.webp 2x">
+            <img src="img/desktop-footer-logo.png" srcset="img/desktop-footer-logo@2x.png 2x" width="41"
+              height="42" alt="Логотип Lumos 22">
+          </picture>
+        </div>
+        <div class="contacts__requisites">
+          <span>ООО "ЛЮМОС 22"</span>
+          <span>Генеральный Директор: Хохлов Олег Геннадиевич</span>
+          <span>ОГРН 1207300003844 / ИНН 7325169355 / КПП: 732501001</span>
+          <span>Политика конфиденциальности</span>
+        </div>
+        <div class="contacts__address">
+          <span>Телефон: 8 (800) 350-03-08</span>
+          <span>Почта: support@lumos22.com</span>
+          <span>Адрес: 432002, Ульяновская обл., г. Ульяновск,</span>
+          <span>ул. Верхнеполевая, д. 1/16, офис 68</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/vendor.js"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>

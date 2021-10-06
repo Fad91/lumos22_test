@@ -1,3 +1,39 @@
-h1 {
-  color: red;
-}
+// файл стилей
+
+// global
+@import "global/fonts.scss";
+@import "global/mixins.scss";
+@import "global/variables.scss";
+@import "global/reboot.scss";
+@import "global/utils.scss";
+
+// blocks
+
+@import "blocks/intro.scss";
+@import "blocks/header.scss";
+@import "blocks/intro-section.scss";
+@import "blocks/features-list.scss";
+@import "blocks/intro-form.scss";
+@import "blocks/marathon-section.scss";
+@import "blocks/marathon-item.scss";
+@import "blocks/details-list.scss";
+@import "blocks/results-list.scss";
+@import "blocks/reasons-section.scss";
+@import "blocks/reasons-list.scss";
+@import "blocks/reasons-item.scss";
+@import "blocks/methods-list.scss";
+@import "blocks/program-section.scss";
+@import "blocks/stages-list.scss";
+@import "blocks/learning-list.scss";
+@import "blocks/results-section.scss";
+@import "blocks/results-block.scss";
+@import "blocks/workshop-list.scss";
+@import "blocks/workshop-item.scss";
+@import "blocks/author-section.scss";
+@import "blocks/author-block.scss";
+@import "blocks/author-list.scss";
+@import "blocks/submit-section.scss";
+@import "blocks/submit-list.scss";
+@import "blocks/submit-form.scss";
+@import "blocks/footer.scss";
+@import "blocks/contacts.scss";

@@ -1,0 +1,29 @@
+.results-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  padding: 0;
+}
+
+.results-list__item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  position: relative;
+  padding-left: 20px;
+
+  &::before {
+    content: "";
+    width: 9px;
+    height: 9px;
+    background: url("../img/icon-round-list.svg") no-repeat;
+    position: absolute;
+    top: 3px;
+    left: 0;
+  }
+
+  @include vp--767 {
+    font-size: 14px;
+  }
+}

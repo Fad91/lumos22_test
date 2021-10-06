@@ -1,0 +1,27 @@
+.reasons-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 349px));
+  column-gap: 34px;
+  justify-content: center;
+
+  @include vp--1023 {
+    grid-template-columns: repeat(3, minmax(220px, 250px));
+    column-gap: 25px;
+  }
+
+  @include vp--767 {
+    grid-template-columns: auto;
+    row-gap: 20px;
+  }
+}
+
+.reasons-list__item {
+  max-width: 349px;
+
+  @include vp--767 {
+    width: 320px;
+  }
+}

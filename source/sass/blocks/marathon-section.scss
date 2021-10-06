@@ -1,0 +1,47 @@
+.marathon-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 65px 0 95px 0;
+
+  @include vp--1023 {
+    max-width: 768px;
+  }
+}
+
+.marathon-section__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #320b61;
+  mix-blend-mode: normal;
+  margin: 0 0 22px 0;
+  padding-bottom: 39px;
+  position: relative;
+
+  @include vp--767 {
+    font-size: 28px;
+  }
+
+  &::after {
+    content: "";
+    width: 83px;
+    background-color: #fad264;
+    border: 1px solid #fad264;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.marathon-section__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 155px;
+}

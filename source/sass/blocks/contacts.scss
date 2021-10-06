@@ -1,0 +1,41 @@
+.contacts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 25px;
+
+  @include vp--1023 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.contacts__logo {
+  grid-column: 2 / -1;
+  text-align: right;
+}
+
+.contacts__requisites,
+.contacts__address {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+  text-align: center;
+}
+
+.contacts__requisites span,
+.contacts__address span {
+  font-family: $font-family-lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #f4f9ff;
+}
+
+.contacts__address {
+  text-align: right;
+
+  @include vp--1023 {
+    text-align: center;
+  }
+}

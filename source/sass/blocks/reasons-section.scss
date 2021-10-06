@@ -1,0 +1,41 @@
+.reasons-section {
+  background-color: #42196d;
+}
+
+.reasons-section__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 82px 0 94px 0;
+
+  @include vp--1023 {
+    max-width: 768px;
+  }
+}
+
+.reasons-section__title {
+  margin: 0 0 60px 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fad264;
+  padding-bottom: 47px;
+  position: relative;
+
+  @include vp--767 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  &::after {
+    content: "";
+    width: 83px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -1,0 +1,33 @@
+.workshop-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+
+  @include vp--1023 {
+    align-items: center;
+  }
+}
+
+.workshop-item__content {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #292841;
+  margin: 0;
+  text-align: center;
+
+  @include vp--1023 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.workshop-item img {
+  @include vp--1023 {
+    width: 300px;
+  }
+
+  @include vp--767 {
+    width: 100%;
+  }
+}

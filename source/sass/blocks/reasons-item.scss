@@ -1,0 +1,55 @@
+.reasons-item__top-wrapper {
+  background-color: #ffffff;
+  border-radius: 40px;
+  margin-bottom: 24px;
+  min-height: 484px;
+  padding: 0 0 5px 0;
+  display: grid;
+  grid-template-rows: auto minmax(88px, auto) minmax(84px, auto);
+  row-gap: 20px;
+  position: relative;
+
+  @include vp--1023 {
+    grid-template-rows: 180px minmax(88px, auto) minmax(84px, auto);
+    row-gap: 10px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: url("../img/icon-arrow-down.svg") no-repeat;
+    width: 48px;
+    height: 30px;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+}
+
+.reasons-item__bottom-wrapper {
+  display: grid;
+  grid-template-rows: minmax(63px, auto) auto;
+}
+
+.reasons-item__content {
+  text-align: center;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  margin: 0;
+
+  @include vp--767 {
+    font-size: 14px;
+  }
+}
+
+.reasons-item__content--bold {
+  font-weight: 700;
+  line-height: 22px;
+  color: #292841;
+}
+
+.reasons-item__content--regular {
+  font-weight: 400;
+  color: #292841;
+}

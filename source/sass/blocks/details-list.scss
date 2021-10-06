@@ -1,0 +1,31 @@
+.details-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  margin-bottom: 30px;
+}
+
+.details-list__item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  position: relative;
+  padding: 5px 5px 5px 50px;
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: url("../img/icon-main-checklist.svg") no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  @include vp--767 {
+    font-size: 14px;
+  }
+}
